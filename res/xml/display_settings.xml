@@ -158,6 +158,16 @@
         android:title="@string/proximity_wake_title"
         android:summary="@string/proximity_wake_summary" />
 
+        <Preference
+            android:key="clock_style"
+            android:title="@string/clock_style_title"
+            android:summary="@string/clock_style_summary">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:targetPackage="com.android.wallpaper"
+                android:targetClass="com.android.customization.picker.LockClockPickerActivity" />
+        </Preference>
+
     <Preference
         android:key="vr_display_pref"
         android:title="@string/display_vr_pref_title"
